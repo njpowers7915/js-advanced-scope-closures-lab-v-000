@@ -1,9 +1,9 @@
-function produceDrivingRange(range) {
+function produceDrivingRange(blockRange) {
   return function(start, end) {
-    if ((end - start) <= range) {
-      return `within range by ${range - (end - start)}`
+    if ((end - start) <= blockRange) {
+      return `within range by ${blockRange - (end - start)}`
     } else {
-      return `${(end - start) - range} blocks out of range`
+      return `${(end - start) - blockRange} blocks out of range`
     }
   }
 }
